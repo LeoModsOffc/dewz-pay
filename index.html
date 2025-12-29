@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Dewzz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="loader">
+  <div class="loader-box">
+    <div class="loader-logo">DEWZZ</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<nav>
+  <h1>Dewzz</h1>
+  <div>
+    <a href="#payment">Payment</a>
+    <a href="#trust">Trust</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-box">
+    <h2>Professional <span>Payment Solution</span><br>For Serious Business</h2>
+    <p>Sistem pembayaran aman, cepat, dan terpercaya.</p>
+    <a href="#contact" class="btn">Hubungi Sekarang</a>
+  </div>
+</div>
+
+<section id="payment">
+  <div class="section-title">
+    <h3>Metode <span>Pembayaran</span></h3>
+  </div>
+
+  <div class="payments">
+    <div class="pay-card" onclick="showNumber('DANA PAY','085711325342')">
+      <i class="fas fa-wallet"></i><h4>DANA PAY</h4>
+    </div>
+    <div class="pay-card" onclick="showNumber('GOPAY PAY','085215530731')">
+      <i class="fas fa-mobile-screen-button"></i><h4>GOJEK PAY</h4>
+    </div>
+    <div class="pay-card" onclick="showNumber('OVO PAY','085881346351')">
+      <i class="fas fa-credit-card"></i><h4>OVO PAY</h4>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h3>Kontak <span>Bisnis</span></h3>
+  </div>
+
+  <div class="trust">
+    <p>Email: dewzzstroyer@gmail.com</p>
+    <a href="https://wa.me/628138891911?text=Halo%20Admin%20Dewzz,%20saya%20mau%20order" target="_blank" class="wa-btn">
+      <i class="fab fa-whatsapp"></i> Chat
+    </a>
+    <a href="https://whatsapp.com/channel/0029VbB6XTuFsn0nxvMVYe2M" target="_blank" class="wa-btn">
+      <i class="fab fa-whatsapp"></i> Channel Wa
+    </a>
+  </div>
+</section>
+
+<footer>© 2025 Dewzz</footer>
+
+<div id="paymentModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast">Berhasil disalin</div>
+
+<script src="main.js"></script>
+
+</body>
+  </html>
